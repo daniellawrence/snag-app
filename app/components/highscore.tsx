@@ -8,7 +8,7 @@ export type HighScoreRecord = {
 }
 
 export async function FetchHighScore(location: string): Promise<HighScoreRecord[]> {
-  const data = await fetch(`http://localhost:8090/api/hightscores?location=${location}`)
+  const data = await fetch(`http://10.1.1.2:8090/api/hightscores?location=${location}`)
   const records: Array<HighScoreRecord> = await data.json();
   console.log('Fetched data:', records);
   return records;

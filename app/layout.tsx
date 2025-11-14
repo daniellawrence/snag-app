@@ -43,13 +43,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Mogra&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="bg-teal-500 text-gray-900 ">
-        <div className="grid grid-cols-6">
-          <div className="col-span-6 md:col-span-4 md:col-start-2">
+        <div className="grid grid-cols-6 ">
+          <div className="col-span-6 md:col-span-4 md:col-start-2 ">
             {children}
           </div>
         </div>

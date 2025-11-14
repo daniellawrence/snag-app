@@ -4,9 +4,9 @@ export const BlackBoard = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <div
-        className="bg-black-100 text-3xl font-extrabold p-5 mb-5 text-center"
+        className=" w-full bg-black-100 text-3xl font-extrabold   p-2 mb-5 text-center border border-green-700"
         style={{
-          fontFamily: "Permanent Marker",
+          fontFamily: "Mogra",
         }}
       >
         {children}

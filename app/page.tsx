@@ -25,9 +25,9 @@ const BlackBoard = ({ children }: { children: any }) => {
   return (
     <>
       <div
-        className="bg-black-100 text-3xl font-extrabold p-5 text-center"
+        className="bg-black-100 text-4xl  p-5 text-center uppercase font-stretch-ultra-condensed"
         style={{
-          fontFamily: "permanent marker",
+          fontFamily: "mogra",
         }}
       >
         {children}
@@ -118,22 +118,26 @@ export default function Page() {
 
   return (
     <>
-      <div className="w-full p-4    sm:p-6   bg-red-100">
-        <div className="grid  gap-8 ">
+      <div className="w-full   bg-red-100">
+        <div className="grid">
           <div className="relative sm:rounded-lg"></div>
 
           <img
             src={ImageHeroLogo}
             alt=""
-            className="flex-shrink-0  max-w-sm mx-auto "
+            className="flex-shrink-0 max-w-sm mx-auto -mb-10 "
           />
+
+          <h2 className="  text-xl font-bold text-center  p-3 -mb-3">
+            WHO MAKES THE BEST HARDWARE STORE SNAGS?
+          </h2>
         </div>
 
-        <div className="text-center">
-          <div className="border-pink-700">
+        <div className="text-center ">
+          <div className="">
             <LocationLink name="VIC" />
-            <LocationLink name="NSW" />
-            <LocationLink name="ACT" />
+            <LocationLink name="NSW/ACT" />
+           
             <LocationLink name="QLD" />
             <LocationLink name="SA" />
             <LocationLink name="WA" />
@@ -147,6 +151,12 @@ export default function Page() {
   
 
       <BlackBoard>
+
+
+
+
+
+        
         <Leaderboard location="VIC">
           {hs}
           {/* 
@@ -156,12 +166,19 @@ export default function Page() {
             <Leader position={4} name="Footy Clubs" rating={3.2} votes={45} />
           */}
         </Leaderboard>
+
+        <div className="w-full p-4 sm:p-6">
+        <div className="grid  ">
+            <p className="  text-2xl font-bold text-center"> VIC LIKES THEIR ONIONS</p>
+            <p className="  text-2xl font-bold text-center"> BELOW</p>
+        </div>
+      </div>
       </BlackBoard>
 
       <div className="w-full p-4 sm:p-6 bg-red-100">
         <div className="grid  gap-8 ">
-          <h2 className="  text-2xl font-bold m-3 text-center">
-            <Link href="/vote">Vote Now</Link>
+          <h2 className="  text-3xl font-bold m-3 text-center">
+            <Link href="/vote">VOTE NOW</Link>
           </h2>
         </div>
       </div>
