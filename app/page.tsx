@@ -136,8 +136,8 @@ export default function Page() {
 
       <Footer>
 <div className="col">
-        <h2 className="  text-2xl font-bold  text-center mb-2 ">
-          <Link href="/vote">VOTE NOW</Link>
+        <h2 className="  text-2xl font-bold  text-center mb-2 uppercase">
+          <Link href="/vote">vote now</Link>
           
           </h2>
 
